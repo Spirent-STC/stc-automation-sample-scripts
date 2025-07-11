@@ -54,10 +54,8 @@ stc.log("INFO", "Starting Test")
 print("SpirentTestCenter system version:\t", stc.get("system1", "version"))
 
 # Physical topology
-#szChassisIp1 = "10.29.0.49"
-#szChassisIp2 = "10.29.0.45"
-szChassisIp1 = "10.109.123.110"
-szChassisIp2 = "10.109.120.103"
+szChassisIp1 = "10.29.0.49"
+szChassisIp2 = "10.29.0.45"
 txPortLoc = "//%s/%s/%s" % ( szChassisIp1, 1, 1)
 rxPortLoc = "//%s/%s/%s" % ( szChassisIp2, 1, 1)
 
