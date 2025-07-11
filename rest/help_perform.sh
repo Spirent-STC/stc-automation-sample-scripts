@@ -1,1 +1,1 @@
-curl http://localhost/stcapi/v1/help/perform/
+curl http://localhost/stcapi/help/perform/
