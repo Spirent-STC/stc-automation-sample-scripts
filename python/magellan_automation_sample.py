@@ -34,8 +34,8 @@ def get_query_url(id):
   return ServiceUrl + "/queries"
 
 def do_query(query, db_id):
-  query_data = copy.deepcopy(query_skeleton)
-  query_body = copy.deepcopy(query)
+  query_data = copy.copy(query_skeleton)
+  query_body = copy.copy(query)
   query_data['database']['id'] = db_id
   query_data['definition'] = query_body
   response = requests.post(get_query_url(db_id), headers=get_header(), json=query_data)
@@ -127,11 +127,20 @@ query_bgp_session_live =   {
 
 query_bgp_session_eot = {
   "multi_result": {
-    "filters": [
-      "view.test_snapshot_name = 'Snapshot 1'"
-    ],
+    "filters": [],
     "groups": [],
-    "orders": [],
+    "orders": [
+      "view.test_snapshot_name_order ASC",
+      "view.port_name_str_order ASC",
+      "view.port_name_num_order ASC",
+      "view.port_name_ip_order ASC",
+      "view.port_name_hostname_order ASC",
+      "view.port_name_slot_order ASC",
+      "view.port_name_port_num_order ASC",
+      "view.emulated_device_name_str_order ASC",
+      "view.emulated_device_name_num_order ASC",
+      "view.bgp_session_session_index ASC"
+    ],
     "projections": [
       "view.test_snapshot_name as test_snapshot_name",
       "view.port_name as port_name",
@@ -198,7 +207,16 @@ query_bgp_session_eot = {
           "(bgp_session_stats.rx_notify_sub_code) as rx_notify_sub_code",
           "(bgp_session_stats.tx_rt_constraint_count) as tx_rt_constraint_count",
           "(bgp_session_stats.rx_rt_constraint_count) as rx_rt_constraint_count",
-          "(bgp_session_stats.session_up_count) as session_up_count"
+          "(bgp_session_stats.session_up_count) as session_up_count",
+          "test.snapshot_name_order as test_snapshot_name_order",
+          "port.name_str_order as port_name_str_order",
+          "port.name_num_order as port_name_num_order",
+          "port.name_ip_order as port_name_ip_order",
+          "port.name_hostname_order as port_name_hostname_order",
+          "port.name_slot_order as port_name_slot_order",
+          "port.name_port_num_order as port_name_port_num_order",
+          "emulated_device.name_str_order as emulated_device_name_str_order",
+          "emulated_device.name_num_order as emulated_device_name_num_order"
         ]
       }
     ]
@@ -230,7 +248,7 @@ project = stc.get('system1', 'children-project')
 ports = stc.get(project, 'children-port')
 portLst = ports.split(' ')
 
-port_addrs = ["//10.28.236.17/1/1", "//10.28.236.39/1/1"]
+port_addrs = ["//10.109.123.178/1/1", "//10.109.122.105/1/1"]
 
 stc.config(portLst[0], location=port_addrs[0])
 stc.config(portLst[1], location=port_addrs[1])
