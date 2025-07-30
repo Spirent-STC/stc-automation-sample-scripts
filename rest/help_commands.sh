@@ -1,1 +1,1 @@
-curl http://localhost/stcapi/v1/help/commands/
+curl http://localhost/stcapi/help/commands/

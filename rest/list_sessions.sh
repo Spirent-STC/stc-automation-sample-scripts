@@ -1,1 +1,1 @@
-curl http://localhost/stcapi/v1/sessions/
+curl http://localhost/stcapi/sessions/
