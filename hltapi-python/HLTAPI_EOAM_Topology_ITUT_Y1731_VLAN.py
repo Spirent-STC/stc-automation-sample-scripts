@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           HLTAPI_EOAM_Topology_ITUT_Y1731_VLAN.py                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup EOAM in B2B connection.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup EOAM in B2B connection.
 #                      
 # Test Steps:          
 #                    1. Reserve and connect chassis ports

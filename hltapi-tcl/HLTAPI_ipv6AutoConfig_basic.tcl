@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_ipv6AutoConfig_basic.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup IPv6 Autoconfiguration Clients test.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup IPv6 Autoconfiguration Clients test.
 #                    In this test, IPv6 clients are emulated on STC port and and ipv6 ND on DUT.
 #
 # Test Step:         1. Reserve and connect chassis ports

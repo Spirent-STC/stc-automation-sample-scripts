@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_DHCPv6_basic.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup DHCPv6 Client/Server test.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup DHCPv6 Client/Server test.
 #                    In this test, DHCP Server and clients are emulated in back-to-back mode.
 #
 # Test Step:         1. Reserve and connect chassis ports

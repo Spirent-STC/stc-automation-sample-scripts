@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           mpls_l3vpn_ldp_multipleCE.robot                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup MPLS L3VPN in BGP/OSPF scenario.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup MPLS L3VPN in BGP/OSPF scenario.
 #                      
 # Test Steps:          
 #             1.Reserve and connect chassis ports
@@ -189,7 +189,7 @@ mpls l3vpn ldp multipleCE test
 #-Config BGP on CE router(Customer Side)
 #-Note: Please set the "-remote_ip_addr" to be the gateway, not the DUT's loopback1, because there are no IGP can broadcast the loopback1 address to CE.
 
-     ${device_ret1} =  emulation bgp config  mode=enable   retries=100   vpls_version=VERSION_00   routes_per_msg=2000   staggered_start_time=100   update_interval=30   retry_time=30   staggered_start_enable=1   md5_key_id=1   md5_key=Spirent   md5_enable=0   ipv4_unicast_nlri=1   ip_stack_version=4   port_handle=${port1}   bgp_session_ip_addr=interface_ip   remote_ip_addr=13.31.0.1   ip_version=4   view_routes=0   remote_as=123   hold_time=90   restart_time=90   route_refresh=0   local_as=1001   active_connect_enable=1   stale_time=90   graceful_restart_enable=0   local_router_id=4.4.4.4   next_hop_ip=13.31.0.1   local_ip_addr=13.31.0.11   netmask=16   mac_address_start=00:10:94:00:00:31
+     ${device_ret1} =  emulation bgp config  mode=enable   retries=100   vpls_version=VERSION_00   routes_per_msg=2000   staggered_start_time=100   update_interval=30   retry_time=30   staggered_start_enable=1   md5_key_id=1   md5_key=VIAVI   md5_enable=0   ipv4_unicast_nlri=1   ip_stack_version=4   port_handle=${port1}   bgp_session_ip_addr=interface_ip   remote_ip_addr=13.31.0.1   ip_version=4   view_routes=0   remote_as=123   hold_time=90   restart_time=90   route_refresh=0   local_as=1001   active_connect_enable=1   stale_time=90   graceful_restart_enable=0   local_router_id=4.4.4.4   next_hop_ip=13.31.0.1   local_ip_addr=13.31.0.11   netmask=16   mac_address_start=00:10:94:00:00:31
 
     ${status} =  Get From Dictionary  ${device_ret1}  status
     Run Keyword If  ${status} == 0  Log To Console  \nFailed to configure BGP on customer side CE.\n${device_ret1}

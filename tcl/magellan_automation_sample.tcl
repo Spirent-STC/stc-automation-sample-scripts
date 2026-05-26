@@ -17,9 +17,9 @@ stc::perform LoadFromXML -FileName "bgp-b2b-sample.xml"
 # One way to verify if Magellan is disabled is to print out the database id. (see line 248)  If Magellan is disabled, no db id will be printed.
 # To enable Magellan, add following two lines (replacing 'ResultSetName' when creating 'EnhancedResultsGroupFilter' with appropriate result set name):
 
-# set spirent_results_EnhancedResultsSelectorProfile [stc::create "spirent.results.EnhancedResultsSelectorProfile" -under system1]
-# set spirent_results_EnhancedResultsGroupFilter [stc::create "spirent.results.EnhancedResultsGroupFilter" \
-        -under $spirent_results_EnhancedResultsSelectorProfile \
+# set viavi_results_EnhancedResultsSelectorProfile [stc::create "spirent.results.EnhancedResultsSelectorProfile" -under system1]
+# set viavi_results_EnhancedResultsGroupFilter [stc::create "spirent.results.EnhancedResultsGroupFilter" \
+        -under $viavi_results_EnhancedResultsSelectorProfile \
         -ResultSetName {bgp_session_stats} ]
 
 # Note that the script above subscribes to all live facts (i.e., counters) supported in the result set. 'EnhancedResultsGroupFilter' has a property 'LiveFacts' which can be used to specify a subset of facts to be subscribed.

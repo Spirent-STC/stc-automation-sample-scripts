@@ -105,7 +105,7 @@ set device_ret_pcep1 [::sth::emulation_pcep_config \
 			-dead_timer          				150 \
 			-enable_pc_results     				false \
 			-authentication          			MD5 \
-			-password                			Spirent \
+			-password                			VIAVI \
 			-enable_init_lsp          			true \
 			-enable_segment_routing    			true \
 			-session_out_standing      			500 \
@@ -248,7 +248,7 @@ set device_ret_pcep2 [::sth::emulation_pcep_config \
 			-dead_timer          		130 \
 			-enable_pc_results     		false \
 			-authentication          	MD5 \
-			-password                	Spirent \
+			-password                	VIAVI \
 			-sync_timer               	60 \
 			-enable_init_lsp          	true \
 			-enable_segment_routing    	true \

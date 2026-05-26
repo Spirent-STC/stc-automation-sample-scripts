@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_BGPv4_BFD.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup BFD test for static routing.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup BFD test for static routing.
 #                    In this test, the interface is not used by any dynamic routing protocol.
 #
 # Test Step:         1. Reserve and connect chassis ports

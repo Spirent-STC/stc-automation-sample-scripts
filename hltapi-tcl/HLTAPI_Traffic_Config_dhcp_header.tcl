@@ -221,7 +221,7 @@ set streamblock_ret1 [::sth::traffic_config    \
         -mac_discovery_gw                                 192.85.1.1 \
         -enable_stream                                    false\
         -dhcp_cli_msg_client_addr                         2.2.2.2\
-        -dhcp_cli_msg_boot_filename                       "spirent"\
+        -dhcp_cli_msg_boot_filename                       "viavi"\
         -dhcp_cli_msg_magic_cookie                        4\
         -dhcp_cli_msg_haddr_len                           5\
         -dhcp_cli_msg_hops                                6\
@@ -382,7 +382,7 @@ set streamblock_ret1 [::sth::traffic_config    \
         -mac_discovery_gw                                 192.85.1.1 \
         -enable_stream                                    false\
         -dhcp_srv_msg_client_addr                         2.2.2.2\
-        -dhcp_srv_msg_boot_filename                       "spirent"\
+        -dhcp_srv_msg_boot_filename                       "viavi"\
         -dhcp_srv_msg_magic_cookie                        4\
         -dhcp_srv_msg_haddr_len                           5\
         -dhcp_srv_msg_hops                                6\
@@ -540,7 +540,7 @@ set streamblock_ret1 [::sth::traffic_config    \
         -mac_discovery_gw                                 192.85.1.1 \
         -enable_stream                                    false\
         -dhcp_cli_msg_client_addr                         2.2.2.2\
-        -dhcp_cli_msg_boot_filename                       "spirent"\
+        -dhcp_cli_msg_boot_filename                       "viavi"\
         -dhcp_cli_msg_magic_cookie                        4\
         -dhcp_cli_msg_haddr_len                           5\
         -dhcp_cli_msg_hops                                6\

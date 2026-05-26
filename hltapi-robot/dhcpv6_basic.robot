@@ -2,7 +2,7 @@
 #
 # File Name:         dhcpv6_basic.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup DHCPv6 Client/Server test.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup DHCPv6 Client/Server test.
 #                    In this test, DHCP Server and clients are emulated in back-to-back mode.
 #
 # Test Step:         1. Reserve and connect chassis ports
@@ -113,7 +113,7 @@ dhcpv6 basic test
 ## Step3: Config dhcpv6 server host
 #########################################
 
-    ${device_ret0} =  emulation dhcp server config  mode=create   ip_version=6   encapsulation=ethernet_ii   prefix_pool_step=1   prefix_pool_per_server=100   prefix_pool_start_addr=2002::1   prefix_pool_step_per_server=0:0:0:1::   prefix_pool_prefix_length=64   addr_pool_host_step=::1   addr_pool_addresses_per_server=100   addr_pool_start_addr=2000::1   addr_pool_prefix_length=64   addr_pool_step_per_server=1   port_handle=${port2}   preferred_lifetime=604800   enable_delayed_auth=false   valid_lifetime=2592000   dhcp_realm=spirent.com   enable_reconfigure_key=false   reneval_time_percent=50   rebinding_time_percent=80   server_emulation_mode=DHCPV6   local_ipv6_prefix_len=64   local_ipv6_addr=2012::2   gateway_ipv6_addr_step=::   local_ipv6_addr_step=::1   gateway_ipv6_addr=2012::1   mac_addr=00:10:94:00:00:04   mac_addr_step=00:00:00:00:00:01   count=1
+    ${device_ret0} =  emulation dhcp server config  mode=create   ip_version=6   encapsulation=ethernet_ii   prefix_pool_step=1   prefix_pool_per_server=100   prefix_pool_start_addr=2002::1   prefix_pool_step_per_server=0:0:0:1::   prefix_pool_prefix_length=64   addr_pool_host_step=::1   addr_pool_addresses_per_server=100   addr_pool_start_addr=2000::1   addr_pool_prefix_length=64   addr_pool_step_per_server=1   port_handle=${port2}   preferred_lifetime=604800   enable_delayed_auth=false   valid_lifetime=2592000   dhcp_realm=viavisolutions.com   enable_reconfigure_key=false   reneval_time_percent=50   rebinding_time_percent=80   server_emulation_mode=DHCPV6   local_ipv6_prefix_len=64   local_ipv6_addr=2012::2   gateway_ipv6_addr_step=::   local_ipv6_addr_step=::1   gateway_ipv6_addr=2012::1   mac_addr=00:10:94:00:00:04   mac_addr_step=00:00:00:00:00:01   count=1
 
     ${status} =  Get From Dictionary  ${device_ret0}  status
     Run Keyword If  ${status} == 0  Log To Console  \nrun emulation dhcp server config failed\n${device_ret0}
@@ -133,7 +133,7 @@ dhcpv6 basic test
 
     ${dhcp_handle} =  Get From Dictionary  ${device_ret1port}  handles
 
-    ${device_ret1} =  emulation dhcp group config  mode=create   dhcp_range_ip_type=6   encap=ethernet_ii   handle=${dhcp_handle}   enable_reconfig_accept=false   preferred_lifetime=604800   use_relay_agent_mac_addr_for_dataplane=true   enable_relay_agent=false   relay_server_ipv6_addr_step=::   dhcp6_range_duid_type=LLT   prefix_length=0   duid_value=1   enable_rebind=false   dhcp6_range_duid_vendor_id_increment=1   prefix_start=::   dad_transmits=1   control_plane_prefix=LINKLOCAL   enable_remote_id=false   valid_lifetime=2592000   dhcp_realm=spirent.com   enable_auth=false   requested_addr_start=::   client_mac_addr_mask=00:00:00:ff:ff:ff   enable_dad=true   dhcp6_range_duid_enterprise_id=3456   dhcp6_range_ia_t1=302400   dst_addr_type=ALL_DHCP_RELAY_AGENTS_AND_SERVERS   dhcp6_range_ia_t2=483840   client_mac_addr=00:10:01:00:00:01   enable_renew=true   enable_ldra=false   dad_timeout=1   client_mac_addr_step=00:00:00:00:00:01   rapid_commit_mode=DISABLE   dhcp6_client_mode=DHCPV6   dhcp6_range_duid_vendor_id=0001   local_ipv6_prefix_len=64   local_ipv6_addr=2009::2   gateway_ipv6_addr_step=::   local_ipv6_addr_step=::1   gateway_ipv6_addr=2005::1   mac_addr=00:00:10:95:11:15   mac_addr_step=00:00:00:00:00:01   num_sessions=20
+    ${device_ret1} =  emulation dhcp group config  mode=create   dhcp_range_ip_type=6   encap=ethernet_ii   handle=${dhcp_handle}   enable_reconfig_accept=false   preferred_lifetime=604800   use_relay_agent_mac_addr_for_dataplane=true   enable_relay_agent=false   relay_server_ipv6_addr_step=::   dhcp6_range_duid_type=LLT   prefix_length=0   duid_value=1   enable_rebind=false   dhcp6_range_duid_vendor_id_increment=1   prefix_start=::   dad_transmits=1   control_plane_prefix=LINKLOCAL   enable_remote_id=false   valid_lifetime=2592000   dhcp_realm=viavisolutions.com   enable_auth=false   requested_addr_start=::   client_mac_addr_mask=00:00:00:ff:ff:ff   enable_dad=true   dhcp6_range_duid_enterprise_id=3456   dhcp6_range_ia_t1=302400   dst_addr_type=ALL_DHCP_RELAY_AGENTS_AND_SERVERS   dhcp6_range_ia_t2=483840   client_mac_addr=00:10:01:00:00:01   enable_renew=true   enable_ldra=false   dad_timeout=1   client_mac_addr_step=00:00:00:00:00:01   rapid_commit_mode=DISABLE   dhcp6_client_mode=DHCPV6   dhcp6_range_duid_vendor_id=0001   local_ipv6_prefix_len=64   local_ipv6_addr=2009::2   gateway_ipv6_addr_step=::   local_ipv6_addr_step=::1   gateway_ipv6_addr=2005::1   mac_addr=00:00:10:95:11:15   mac_addr_step=00:00:00:00:00:01   num_sessions=20
 
     ${status} =  Get From Dictionary  ${device_ret1}  status
     Run Keyword If  ${status} == 0  Log To Console  \nrun emulation dhcp group config failed\n${device_ret1}

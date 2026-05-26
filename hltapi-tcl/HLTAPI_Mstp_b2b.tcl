@@ -3,7 +3,7 @@
 #
 # File Name:         HLTAPI_Mstp_b2b.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup MSTP devices
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup MSTP devices
 #
 # Test Step:         1. Reserve and connect chassis ports
 #                    2. Interface config

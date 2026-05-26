@@ -2,7 +2,7 @@
 #
 # File Name:         bgp_ls.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup BGP-LS with OSPF.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup BGP-LS with OSPF.
 #
 # Test Step:         
 #                   1. Reserve and connect chassis ports         
@@ -97,7 +97,7 @@ BGP-LS Test
 #start to create the device: Device 1
 #configure BGP router1
 
-    ${device_ret0} =  emulation bgp config  mode=enable   retries=100   vpls_version=VERSION_00   routes_per_msg=2000   staggered_start_time=100   update_interval=30   retry_time=30   staggered_start_enable=1   md5_key_id=1   md5_key=Spirent   md5_enable=0   link_ls_non_vpn_nlri=1   ip_stack_version=4   port_handle=${port1}   bgp_session_ip_addr=interface_ip   remote_ip_addr=193.85.1.3   ip_version=4   view_routes=0   remote_as=1   hold_time=90   restart_time=90   route_refresh=0   local_as=1001   active_connect_enable=1   stale_time=90   graceful_restart_enable=0   local_router_id=192.0.0.3   next_hop_ip=193.85.1.3   local_ip_addr=193.85.1.1   netmask=24   mac_address_start=00:10:94:00:00:01
+    ${device_ret0} =  emulation bgp config  mode=enable   retries=100   vpls_version=VERSION_00   routes_per_msg=2000   staggered_start_time=100   update_interval=30   retry_time=30   staggered_start_enable=1   md5_key_id=1   md5_key=VIAVI   md5_enable=0   link_ls_non_vpn_nlri=1   ip_stack_version=4   port_handle=${port1}   bgp_session_ip_addr=interface_ip   remote_ip_addr=193.85.1.3   ip_version=4   view_routes=0   remote_as=1   hold_time=90   restart_time=90   route_refresh=0   local_as=1001   active_connect_enable=1   stale_time=90   graceful_restart_enable=0   local_router_id=192.0.0.3   next_hop_ip=193.85.1.3   local_ip_addr=193.85.1.1   netmask=24   mac_address_start=00:10:94:00:00:01
 
     ${status} =  Get From Dictionary  ${device_ret0}  status
     Run Keyword If  ${status} == 0  Log To Console  \nrun emulation bgp config failed\n${device_ret0}
@@ -146,7 +146,7 @@ BGP-LS Test
 #start to create the device: Device 2
 #configure BGP router2
 
-    ${device_ret1} =  emulation bgp config  mode=enable   retries=100   vpls_version=VERSION_00   routes_per_msg=2000   staggered_start_time=100   update_interval=30   retry_time=30   staggered_start_enable=1   md5_key_id=1   md5_key=Spirent   md5_enable=0   link_ls_non_vpn_nlri=1   ip_stack_version=4   port_handle=${port2}   bgp_session_ip_addr=interface_ip   remote_ip_addr=193.85.1.1   ip_version=4   view_routes=0   remote_as=1001   hold_time=90   restart_time=90   route_refresh=0   local_as=1   active_connect_enable=1   stale_time=90   graceful_restart_enable=0   local_router_id=192.0.0.3   next_hop_ip=193.85.1.1   local_ip_addr=193.85.1.3   netmask=24   mac_address_start=00:10:94:00:00:03
+    ${device_ret1} =  emulation bgp config  mode=enable   retries=100   vpls_version=VERSION_00   routes_per_msg=2000   staggered_start_time=100   update_interval=30   retry_time=30   staggered_start_enable=1   md5_key_id=1   md5_key=VIAVI   md5_enable=0   link_ls_non_vpn_nlri=1   ip_stack_version=4   port_handle=${port2}   bgp_session_ip_addr=interface_ip   remote_ip_addr=193.85.1.1   ip_version=4   view_routes=0   remote_as=1001   hold_time=90   restart_time=90   route_refresh=0   local_as=1   active_connect_enable=1   stale_time=90   graceful_restart_enable=0   local_router_id=192.0.0.3   next_hop_ip=193.85.1.1   local_ip_addr=193.85.1.3   netmask=24   mac_address_start=00:10:94:00:00:03
 
     ${status} =  Get From Dictionary  ${device_ret1}  status
     Run Keyword If  ${status} == 0  Log To Console  \nrun emulation bgp config failed\n${device_ret1}

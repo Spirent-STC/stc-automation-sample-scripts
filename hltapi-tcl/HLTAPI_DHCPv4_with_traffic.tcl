@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_DHCPv4_with_traffic.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup DHCPv4 with traffic test.                  
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup DHCPv4 with traffic test.                  
 #
 # Test Step:         1. Reserve and connect chassis ports
 #                    2. Interface config

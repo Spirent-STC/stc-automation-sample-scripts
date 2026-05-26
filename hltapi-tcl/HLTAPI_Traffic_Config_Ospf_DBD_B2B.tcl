@@ -1,5 +1,5 @@
 #####################################################################
-# "Copyright 2008 Spirent Communications, PLC. All rights reserved"
+# "Copyright 2008-2026 VIAVI Solutions, Inc. All rights reserved"
 #
 # By accessing or executing this software, you agree to be bound 
 # by the terms of this agreement.
@@ -13,15 +13,15 @@
 #       notice, this list of conditions and the following disclaimer
 #       in the documentation and/or other materials provided with the
 #       distribution.
-#   3.  Neither the name Spirent Communications nor the names of its
+#   3.  Neither the name VIAVI Solutions nor the names of its
 #       contributors may be used to endorse or promote products derived
 #       from this software without specific prior written permission.
 #
 # This software is provided by the copyright holders and contributors 
 # [as is] and any express or implied warranties, including, but not 
 # limited to, the implied warranties of merchantability and fitness for
-# a particular purpose are disclaimed.  In no event shall Spirent
-# Communications, Inc. or its contributors be liable for any direct, 
+# a particular purpose are disclaimed.  In no event shall VIAVI
+# Solutions, Inc. or its contributors be liable for any direct, 
 # indirect, incidental, special, exemplary, or consequential damages
 # (including, but not limited to: procurement of substitute goods or
 # services; loss of use, data, or profits; or business interruption)

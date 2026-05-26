@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_PTP_b2b.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup PTP device in back to back environment.                  
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup PTP device in back to back environment.                  
 #
 # Test Step:         1. Reserve and connect chassis ports
 #                    2. Interface config

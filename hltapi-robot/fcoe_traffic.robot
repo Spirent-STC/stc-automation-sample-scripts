@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           fcoe_traffic.robot                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup FCoE_Traffic in B2B mode.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup FCoE_Traffic in B2B mode.
 #                      
 # Test Steps:          
 #                    1. Reserve and connect chassis ports

@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_BGPv4_BFD.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to config BFD support for BGP test.                  
+# Description:       This script demonstrates the use of VIAVI HLTAPI to config BFD support for BGP test.                  
 #
 # Test Step:         1. Reserve and connect chassis ports
 #                    2. Interface config

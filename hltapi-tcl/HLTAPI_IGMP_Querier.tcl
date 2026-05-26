@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_Igmp_Querier.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup Igmp Router.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup Igmp Router.
 #
 # Test Step:         # Step 1 : Connect to chassis & reserve port
 #                    # Step 2 : Interface Configuration 

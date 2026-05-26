@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_DHCP_Server.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup DHCP Server test.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup DHCP Server test.
 #                    In this test, DHCP Server and clients are emulated in back-to-back mode.
 #
 # Test Step:         1. Reserve and connect chassis ports

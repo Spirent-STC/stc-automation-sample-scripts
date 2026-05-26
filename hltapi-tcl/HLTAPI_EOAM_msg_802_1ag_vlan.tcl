@@ -1,7 +1,7 @@
 #################################################################################################
 # Title         :       HLTAPI_EOAM_msg_802.1ag.tcl                                       #
 # Purpose       :       To verify the EOAM command can work #
-# TestCase      :     P2.40_Spirent_TestCenter/HLTAPI/EOAM/HLTAPI_EOAM_msg_802.1ag                                                                                       #
+# TestCase      :     P2.40_VIAVI_TestCenter/HLTAPI/EOAM/HLTAPI_EOAM_msg_802.1ag                                                                                       #
 # Summary       :       This script creates a simple two ports (2 ports) EOAM config.           #
 #                       									#
 #                                                                                               #
@@ -36,7 +36,7 @@
 # Run:                                                                                          #
 #            c:>tclsh HLTAPI_EOAM_msg_802.1ag.tcl 10.61.44.2 3/1 3/3                            #
 #                                                                                               #
-#  "Copyright Spirent Communications PLC, All rights reserved"                                  #
+#  "Copyright VIAVI Solutions, Inc., All rights reserved"                                  #
 #                                                                                               #
 #################################################################################################
 

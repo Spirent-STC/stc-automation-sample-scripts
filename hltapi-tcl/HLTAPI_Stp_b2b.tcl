@@ -3,7 +3,7 @@
 #
 # File Name:         HLTAPI_Stp_b2b.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup STP devices
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup STP devices
 #
 # Test Step:         1. Reserve and connect chassis ports
 #                    2. Interface config

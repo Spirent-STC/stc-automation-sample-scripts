@@ -2,7 +2,7 @@
 #
 # File Name:         dhcp_server_relay_agent.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup DHCP Server test.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup DHCP Server test.
 #                    In this test, DHCP Server assigns ip addresses to DHCP clients in different network through Relay agent.
 #
 # Test Step:         1. Reserve and connect chassis ports
@@ -127,7 +127,7 @@ dhcp relay agent test
 # Step3: Config dhcp server host
 ########################################
 
-    ${device_ret0} =  emulation dhcp server config  mode=create   ip_version=4   encapsulation=ETHERNET_II   remote_id=remoteId_@p-@b-@s   ipaddress_count=245   ipaddress_pool=100.1.0.9   vpn_id_count=1   vpn_id_type=nvt_ascii   circuit_id_count=1   remote_id_count=1   circuit_id=circuitId_@p   vpn_id=spirent_@p   ipaddress_increment=1   port_handle=${port2}   lease_time=60   tos_value=192   offer_reserve_time=10   min_allowed_lease_time=600   assign_strategy=GATEWAY   host_name=server_@p-@b-@s   renewal_time_percent=50   enable_overlap_addr=false   decline_reserve_time=10   rebinding_time_percent=87.5   ip_repeat=0   remote_mac=00:00:01:00:00:01   ip_address=100.1.0.8   ip_prefix_length=24   ip_gateway=100.1.0.1   ip_step=0.0.0.1   local_mac=00:10:94:00:00:02   count=1
+    ${device_ret0} =  emulation dhcp server config  mode=create   ip_version=4   encapsulation=ETHERNET_II   remote_id=remoteId_@p-@b-@s   ipaddress_count=245   ipaddress_pool=100.1.0.9   vpn_id_count=1   vpn_id_type=nvt_ascii   circuit_id_count=1   remote_id_count=1   circuit_id=circuitId_@p   vpn_id=viavi_@p   ipaddress_increment=1   port_handle=${port2}   lease_time=60   tos_value=192   offer_reserve_time=10   min_allowed_lease_time=600   assign_strategy=GATEWAY   host_name=server_@p-@b-@s   renewal_time_percent=50   enable_overlap_addr=false   decline_reserve_time=10   rebinding_time_percent=87.5   ip_repeat=0   remote_mac=00:00:01:00:00:01   ip_address=100.1.0.8   ip_prefix_length=24   ip_gateway=100.1.0.1   ip_step=0.0.0.1   local_mac=00:10:94:00:00:02   count=1
 
     ${status} =  Get From Dictionary  ${device_ret0}  status
     Run Keyword If  ${status} == 0  Log To Console  \nrun emulation dhcp server config failed\n${device_ret0}
@@ -140,7 +140,7 @@ dhcp relay agent test
 # Step4: Config dhcp server relay agent pool
 ###############################################   
 
-    ${device_ret0_agent0} =  emulation dhcp server relay agent config  mode=create   relay_agent_pool_count=2   relay_agent_pool_step=1.0.0.0   handle=${dhcpserver_handle}   vpn_id_count=1   remote_id_count=1   relay_agent_ipaddress_count=50   relay_agent_ipaddress_pool=110.0.0.5   circuit_id=circuitId_@p   vpn_id=spirent_@p   remote_id=remoteId_@p-@b-@s   vpn_id_type=nvt_ascii   relay_agent_ipaddress_step=0.0.0.1   circuit_id_count=1   prefix_length=24
+    ${device_ret0_agent0} =  emulation dhcp server relay agent config  mode=create   relay_agent_pool_count=2   relay_agent_pool_step=1.0.0.0   handle=${dhcpserver_handle}   vpn_id_count=1   remote_id_count=1   relay_agent_ipaddress_count=50   relay_agent_ipaddress_pool=110.0.0.5   circuit_id=circuitId_@p   vpn_id=viavi_@p   remote_id=remoteId_@p-@b-@s   vpn_id_type=nvt_ascii   relay_agent_ipaddress_step=0.0.0.1   circuit_id_count=1   prefix_length=24
 
     ${status} =  Get From Dictionary  ${device_ret0_agent0}  status
     Run Keyword If  ${status} == 0  Log To Console  \nrun emulation dhcp server relay agent config failed\n${device_ret0_agent0}

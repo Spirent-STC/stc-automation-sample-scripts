@@ -20,7 +20,7 @@
         #    prefix-delegation BBBB:1::23F6:33BA/64 0003000100146A54561B 
         #    prefix-delegation pool rui-pool2
         #    dns-server BBBB:1::19
-        #    domain-name spirent.com
+        #    domain-name viavisolutions.com
         #
         #
         #int g0/3

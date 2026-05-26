@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           sip_proxyserver.robot                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup SIP in proxy server scenario.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup SIP in proxy server scenario.
 #                      If the DUT doesn't support SIP proxy server,the register will fail.
 #                      
 # Test Steps:          

@@ -20,7 +20,7 @@
         #    prefix-delegation BBBB:1::23F6:33BA/64 0003000100146A54561B 
         #    prefix-delegation pool rui-pool2
         #    dns-server BBBB:1::19
-        #    domain-name spirent.com
+        #    domain-name viavisolutions.com
         #
         #
         #int g0/3
@@ -130,7 +130,7 @@ pppox ipv6 traffic test
 # Step3: create pppoe client
 ##############################################################
 
-    ${device_ret0} =  pppox config  mode=create   encap=ethernet_ii   protocol=pppoe   ac_select_mode=service_name   circuit_id_suffix_mode=none   port_handle=${port1}   max_outstanding=100   disconnect_rate=1000   attempt_rate=100   pppoe_circuit_id=circuit   mru_neg_enable=1   max_configure_req=10   chap_ack_timeout=3   max_padi_req=10   padi_include_tag=1   padr_req_timeout=3   max_terminate_req=10   term_req_timeout=3   username=spirent   use_partial_block_state=false   max_auto_retry_count=65535   agent_type=2516   max_ipcp_req=10   intermediate_agent=false   echo_req_interval=10   password=spirent   local_magic=1   config_req_timeout=3   active=1   auto_retry=false   padi_req_timeout=3   agent_mac_addr=00:00:00:00:00:00   lcp_mru=1492   ip_cp=ipv6_cp   auto_fill_ipv6=1   max_echo_acks=0   auth_mode=none   include_id=1   ipcp_req_timeout=3   max_padr_req=10   padr_include_tag=1   echo_req=false   fsm_max_naks=5   local_ipv6_addr=fe80::210:94ff:fe01:1   gateway_ipv6_step=::   intf_ipv6_addr=2000::2   intf_ipv6_addr_step=::1   gateway_ipv6_addr=::   mac_addr=00:10:94:01:00:01   mac_addr_repeat=0   mac_addr_step=00:00:00:00:00:01   num_sessions=4
+    ${device_ret0} =  pppox config  mode=create   encap=ethernet_ii   protocol=pppoe   ac_select_mode=service_name   circuit_id_suffix_mode=none   port_handle=${port1}   max_outstanding=100   disconnect_rate=1000   attempt_rate=100   pppoe_circuit_id=circuit   mru_neg_enable=1   max_configure_req=10   chap_ack_timeout=3   max_padi_req=10   padi_include_tag=1   padr_req_timeout=3   max_terminate_req=10   term_req_timeout=3   username=viavi   use_partial_block_state=false   max_auto_retry_count=65535   agent_type=2516   max_ipcp_req=10   intermediate_agent=false   echo_req_interval=10   password=viavi   local_magic=1   config_req_timeout=3   active=1   auto_retry=false   padi_req_timeout=3   agent_mac_addr=00:00:00:00:00:00   lcp_mru=1492   ip_cp=ipv6_cp   auto_fill_ipv6=1   max_echo_acks=0   auth_mode=none   include_id=1   ipcp_req_timeout=3   max_padr_req=10   padr_include_tag=1   echo_req=false   fsm_max_naks=5   local_ipv6_addr=fe80::210:94ff:fe01:1   gateway_ipv6_step=::   intf_ipv6_addr=2000::2   intf_ipv6_addr_step=::1   gateway_ipv6_addr=::   mac_addr=00:10:94:01:00:01   mac_addr_repeat=0   mac_addr_step=00:00:00:00:00:01   num_sessions=4
 
     ${status} =  Get From Dictionary  ${device_ret0}  status
     Run Keyword If  ${status} == 0  Log To Console  \nrun pppox config failed\n${device_ret0}

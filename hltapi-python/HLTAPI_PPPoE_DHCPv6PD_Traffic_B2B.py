@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_PPPoE_DHCPV6PD_TRAFFIC_B2B.py
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup PPPoE server and client,DHCPv6-PD server and #                    client,and create/trigger traffic between PPPoE server and client.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup PPPoE server and client,DHCPv6-PD server and #                    client,and create/trigger traffic between PPPoE server and client.
 #                    
 #
 # Test Step:         1. Reserve and connect chassis ports
@@ -189,8 +189,8 @@ device_ret1 = sth.pppox_config (
         ip_cp                                            = 'ipv6_cp',
         num_sessions                                     = '1',
         auth_mode                                        = 'chap',
-        username                                         = 'spirent',
-        password                                         = 'spirent',
+        username                                         = 'viavi',
+        password                                         = 'viavi',
         mac_addr                                         = '00:10:94:01:00:45',
         mac_addr_step                                    = '00:00:00:00:00:01')
 

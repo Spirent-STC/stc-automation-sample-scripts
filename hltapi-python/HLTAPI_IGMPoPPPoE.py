@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_IGMPoPPPoE.py
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup IGMP over PPPoE.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup IGMP over PPPoE.
 #
 # Test Steps:        1. Reserve and connect chassis ports
 #                    2. Configure interface on port2
@@ -122,8 +122,8 @@ device_ret0 = sth.pppox_config (
         protocol                                         = 'pppoe',
         ip_cp                                            = 'ipv4_cp',
         port_handle                                      = port_handle[0],
-        username                                         = 'spirent',
-        password                                         = 'spirent',
+        username                                         = 'viavi',
+        password                                         = 'viavi',
         num_sessions                                     = '1',
         auth_mode                                        = 'chap',
         chap_ack_timeout                                 = '10',

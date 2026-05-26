@@ -1,5 +1,5 @@
 #####################################################################
-# "Copyright 2008 Spirent Communications, PLC. All rights reserved"
+# "Copyright 2008-2026 VIAVI Solutions, Inc. All rights reserved"
 #
 # Author:    Ricky zhu
 #
@@ -118,9 +118,9 @@ set logValue 0
 set capture 0
 
 set DUTIP "10.99.0.191"
-set username spirent
-set password spirent
-set enablePassword spirent
+set username viavi
+set password viavi
+set enablePassword viavi
 
 set timeout 15
 set runtime 60

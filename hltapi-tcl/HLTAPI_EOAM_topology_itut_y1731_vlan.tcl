@@ -1,7 +1,7 @@
 #################################################################################################
 # Title         :       HLTAPI_EOAM_topopology_itut_y1731_vlan.tcl                              #
 # Purpose       :       To verify the EOAM command can work #
-# TestCase      :     	P2.40_Spirent_TestCenter/HLTAPI/EOAM/HLTAPI_EOAM_msg_itut_y1731_vlan                                                                                  #
+# TestCase      :     	P2.40_VIAVI_TestCenter/HLTAPI/EOAM/HLTAPI_EOAM_msg_itut_y1731_vlan                                                                                  #
 # Summary       :       This script creates a simple two ports (2 ports) EOAM config.           #
 #                       																		#
 #                                                                                               #
@@ -29,7 +29,7 @@
 #            c:>tclsh HLTAPI_EOAM_topopology_itut_y1731_vlan.tcl 10.61.44.2 3/1 3/3                            #
 #                                                                                               #
 #                                                                                               #
-#  "Copyright Spirent Communications PLC, All rights reserved"                                  #
+#  "Copyright VIAVI Solutions, Inc., All rights reserved"                                  #
 #                                                                                               #
 #################################################################################################
 
@@ -124,7 +124,6 @@ set top1 [::sth::emulation_oam_config_topology -mode create \
                                              -mep_id 1 \
                                             -mep_id_incr_mode increment \
                                             -mep_id_step 1 ]
-
 
 
 
@@ -302,7 +301,6 @@ set top3 [::sth::emulation_oam_config_topology -mode modify \
                                              -mep_id 10 \
                                             -mep_id_incr_mode increment \
                                             -mep_id_step 1 ]
-
 puts $top3
 
 set topHandleList3 [keylget top1 handle]

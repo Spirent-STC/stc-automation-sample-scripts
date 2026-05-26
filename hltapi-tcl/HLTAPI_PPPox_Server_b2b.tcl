@@ -3,7 +3,7 @@
 #
 # File Name:         HLTAPI_PPPox_Server_b2b.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup PPPox Server devices
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup PPPox Server devices
 #                    and create bound traffic between PPPox servers and clients.                  
 #
 # Test Step:         1. Reserve and connect chassis ports
@@ -139,8 +139,8 @@ set returnedString [sth::pppox_server_config   -mode "create" \
                         -disconnect_rate             50 \
                         -max_outstanding             100 \
                         -auth_mode                   chap \
-                        -username                    spirent \
-                        -password                    spirent \
+                        -username                    viavi \
+                        -password                    viavi \
                         -mac_addr                    "00:10:94:01:00:01" \
                         -mac_addr_step               "00.00.00.00.00.01" \
                         -intf_ip_addr                192.0.0.8 \
@@ -178,8 +178,8 @@ set returnedString [sth::pppox_config   -mode "create" \
                         -ip_cp                      ipv4_cp \
                         -num_sessions               $deviceNum \
                         -auth_mode                  chap \
-                        -username                   spirent \
-                        -password                   spirent \
+                        -username                   viavi \
+                        -password                   viavi \
                         -mac_addr                   "00:10:94:01:00:45" \
                         -mac_addr_step              "00.00.00.00.00.01" \
                         -vlan_id                     200 \
