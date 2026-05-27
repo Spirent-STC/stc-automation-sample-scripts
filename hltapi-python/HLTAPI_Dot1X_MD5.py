@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_Dot1X_MD5.py
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup 802.1x devices by MD5                   #                    authentication.                  
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup 802.1x devices by MD5                   #                    authentication.                  
 #
 # Test Steps:        1. Reserve and connect chassis ports
 #                    2. Configure interface
@@ -149,8 +149,8 @@ returnedString = sth.emulation_dot1x_config (
     max_authentications                                   = '600',
     retransmit_count                                      = '300',
     eap_auth_method                                       = 'md5',
-    username                                              = 'spirent',
-    password                                              = 'spirent')
+    username                                              = 'viavi',
+    password                                              = 'viavi')
 
 status = returnedString['status']
 if (status == '0') :

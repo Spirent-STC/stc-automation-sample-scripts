@@ -3,7 +3,7 @@
 #
 # File Name:         HLTAPI_Dot1x_basic.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup 802.1x devices.                  
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup 802.1x devices.                  
 #
 # Test Step:         1. Reserve and connect chassis ports
 #                    2. Interface config

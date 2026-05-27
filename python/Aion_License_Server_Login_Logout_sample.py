@@ -9,7 +9,7 @@ stc = StcPython()
 stc.log("INFO", "Starting Test")
 
 # Retrieve and display the current API version.
-print("SpirentTestCenter system version:\t", stc.get("system1", "version"))
+print("TestCenter system version:\t", stc.get("system1", "version"))
 
 #Sign in AION License Server
 print("Signing AION License Server")

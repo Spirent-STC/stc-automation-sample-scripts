@@ -2,7 +2,7 @@
 #
 # File Name:         BGP_BFD.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup BFD on BGP routers.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup BFD on BGP routers.
 #
 # Test Step:         1. Reserve and connect chassis ports
 #                    2. Config BGP router with BFD enabled
@@ -109,7 +109,7 @@ BGP BFD Test
 
     #start to create the device: Device 1
 
-    ${device_ret0} =  emulation bgp config  mode=enable   retries=100   vpls_version=VERSION_00   routes_per_msg=2000   staggered_start_time=100   update_interval=30   retry_time=30   staggered_start_enable=1   md5_key_id=1   md5_key=Spirent   md5_enable=0   ipv4_unicast_nlri=1   ip_stack_version=4   port_handle=${port1}   bgp_session_ip_addr=interface_ip   remote_ip_addr=100.1.0.1   ip_version=4   view_routes=0   remote_as=123   hold_time=90   restart_time=90   route_refresh=0   local_as=1   active_connect_enable=1   bfd_registration=1   stale_time=90   graceful_restart_enable=0   local_router_id=22.1.1.2   next_hop_ip=100.1.0.1   local_ip_addr=100.1.0.8   netmask=24   mac_address_start=00:10:94:00:00:02
+    ${device_ret0} =  emulation bgp config  mode=enable   retries=100   vpls_version=VERSION_00   routes_per_msg=2000   staggered_start_time=100   update_interval=30   retry_time=30   staggered_start_enable=1   md5_key_id=1   md5_key=VIAVI   md5_enable=0   ipv4_unicast_nlri=1   ip_stack_version=4   port_handle=${port1}   bgp_session_ip_addr=interface_ip   remote_ip_addr=100.1.0.1   ip_version=4   view_routes=0   remote_as=123   hold_time=90   restart_time=90   route_refresh=0   local_as=1   active_connect_enable=1   bfd_registration=1   stale_time=90   graceful_restart_enable=0   local_router_id=22.1.1.2   next_hop_ip=100.1.0.1   local_ip_addr=100.1.0.8   netmask=24   mac_address_start=00:10:94:00:00:02
 
     ${status} =  Get From Dictionary  ${device_ret0}  status
     Run Keyword If  ${status} == 0  Log To Console  \nrun emulation bgp config failed\n${device_ret0}

@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           eoam_msg_802.1ag_vlan.robot                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup EOAM and 802.1ag in B2B connection.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup EOAM and 802.1ag in B2B connection.
 #                      
 # Test Steps:          
 #                    1. Reserve and connect chassis ports

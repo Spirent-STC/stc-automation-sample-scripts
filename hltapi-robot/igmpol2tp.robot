@@ -2,7 +2,7 @@
 #
 # File Name:         igmpol2tp.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup IGMP over L2TP test.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup IGMP over L2TP test.
 #
 # Test Steps:         1. Reserve and connect chassis ports
 #                     2. Configure LAC on port1

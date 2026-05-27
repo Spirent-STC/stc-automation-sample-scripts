@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_Pppol2tp_b2b.py
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup Pppol2tp LAC-LNS test.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup Pppol2tp LAC-LNS test.
 #                    In this test, l2tp LNS and LAC are emulated in back-to-back mode.
 #
 # Test Step:         1. Reserve and connect chassis ports
@@ -92,11 +92,11 @@ device_ret2 = sth.l2tp_config (
     ppp_auto_retry                 = 'FALSE',
     max_terminate_req              = '10',
     auth_req_timeout               = '3',
-    username                       = 'spirent',
+    username                       = 'viavi',
     ppp_retry_count                = '65535',
     max_ipcp_req                   = '10',
     echo_req_interval              = '10',
-    password                       = 'spirent',
+    password                       = 'viavi',
     config_req_timeout             = '3',
     terminate_req_timeout          = '3',
     max_echo_acks                  = '0',
@@ -120,8 +120,8 @@ device_ret2 = sth.l2tp_config (
     avp_tx_connect_speed           = '56000',
     udp_src_port                   = '1701',
     lcp_proxy_mode                 = 'none',
-    secret                         = 'spirent',
-    hostname                       = 'server.spirent.com',
+    secret                         = 'viavi',
+    hostname                       = 'server.viavisolutions.com',
     rws                            = '4')
 
 status = device_ret2['status']
@@ -155,11 +155,11 @@ device_ret1 = sth.l2tp_config (
     ppp_auto_retry                 = 'FALSE',
     max_terminate_req              = '10',
     auth_req_timeout               = '3',
-    username                       = 'spirent',
+    username                       = 'viavi',
     ppp_retry_count                = '65535',
     max_ipcp_req                   = '10',
     echo_req_interval              = '10',
-    password                       = 'spirent',
+    password                       = 'viavi',
     config_req_timeout             = '3',
     terminate_req_timeout          = '3',
     max_echo_acks                  = '0',
@@ -183,8 +183,8 @@ device_ret1 = sth.l2tp_config (
     avp_tx_connect_speed           = '56000',
     udp_src_port                   = '1701',
     lcp_proxy_mode                 = 'none',
-    secret                         = 'spirent',
-    hostname                       = 'server.spirent.com',
+    secret                         = 'viavi',
+    hostname                       = 'server.viavisolutions.com',
     rws                            = '4')
 
 status = device_ret1['status']

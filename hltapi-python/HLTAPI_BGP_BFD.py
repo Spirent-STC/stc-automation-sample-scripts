@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_BGP_BFD.py
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup BFD enabled BGP in B2B mode.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup BFD enabled BGP in B2B mode.
 #
 # Test Step:         1. Reserve and connect chassis ports
 #                    2. Config BGP router with BFD enabled

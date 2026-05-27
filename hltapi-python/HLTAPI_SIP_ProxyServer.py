@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           HLTAPI_sip_proxy_server.py                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup SIP in proxy server scenario.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup SIP in proxy server scenario.
 #                      
 # Test Steps:          
 #                    1. Reserve and connect chassis ports

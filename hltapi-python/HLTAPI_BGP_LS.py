@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_BGP_LS.py
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup BGP-LS with OSPF.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup BGP-LS with OSPF.
 #
 # Test Step:         
 #                   1. Reserve and connect chassis ports         
@@ -104,7 +104,7 @@ device_ret0 = sth.emulation_bgp_config (
           retry_time                                       = '30',
           staggered_start_enable                           = '1',
           md5_key_id                                       = '1',
-          md5_key                                          = 'Spirent',
+          md5_key                                          = 'VIAVI',
           md5_enable                                       = '0',
           link_ls_non_vpn_nlri                             = '1',
           ip_stack_version                                 = '4',
@@ -237,7 +237,7 @@ device_ret1 = sth.emulation_bgp_config (
           retry_time                                       = '30',
           staggered_start_enable                           = '1',
           md5_key_id                                       = '1',
-          md5_key                                          = 'Spirent',
+          md5_key                                          = 'VIAVI',
           md5_enable                                       = '0',
           link_ls_non_vpn_nlri                             = '1',
           ip_stack_version                                 = '4',

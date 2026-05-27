@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           rfc2544.robot                
-# Description:         This script demonstrates the use of Spirent HLTAPI to test RFC2544 includes latency, back to back,frame #                      loss,and throughput.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to test RFC2544 includes latency, back to back,frame #                      loss,and throughput.
 #                      
 #                      
 # Test Steps:          

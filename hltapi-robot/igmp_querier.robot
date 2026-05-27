@@ -2,7 +2,7 @@
 #
 # File Name:         igmp_querier.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup Igmp Router.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup Igmp Router.
 #
 # Test Step:          1. Reserve and connect chassis ports
 #                     2. Configure IGMP Querier(router) on port1

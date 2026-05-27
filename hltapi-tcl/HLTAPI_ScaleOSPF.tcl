@@ -1,4 +1,4 @@
-# Copyright (c) 2007 by Spirent Communications, Inc.
+# Copyright (c) 2007-2026 by VIAVI Solutions, Inc.
 # All Rights Reserved
 #
 # By accessing or executing this software, you agree to be bound 
@@ -13,15 +13,15 @@
 #       notice, this list of conditions and the following disclaimer
 #       in the documentation and/or other materials provided with the
 #       distribution.
-#   3.  Neither the name Spirent Communications nor the names of its
+#   3.  Neither the name VIAVI Solutions nor the names of its
 #       contributors may be used to endorse or promote products derived
 #       from this software without specific prior written permission.
 #
 # This software is provided by the copyright holders and contributors 
 # [as is] and any express or implied warranties, including, but not 
 # limited to, the implied warranties of merchantability and fitness for
-# a particular purpose are disclaimed.  In no event shall Spirent
-# Communications, Inc. or its contributors be liable for any direct, 
+# a particular purpose are disclaimed.  In no event shall VIAVI
+# Solutions, Inc. or its contributors be liable for any direct, 
 # indirect, incidental, special, exemplary, or consequential damages
 # (including, but not limited to: procurement of substitute goods or
 # services; loss of use, data, or profits; or business interruption)
@@ -31,7 +31,7 @@
 # possibility of such damage.
 #
 # File Name:                 HLTAPI_xxx.tcl
-# Description:               This script demonstrates the use of Spirent HLTAPI to setup 100 OSPF routers and 1 route per router.
+# Description:               This script demonstrates the use of VIAVI HLTAPI to setup 100 OSPF routers and 1 route per router.
 ################################################################################################################################  
 
 # Run sample:
@@ -58,9 +58,9 @@ set checkDUT 0
 
 set dutCommandType "Juniper"
 set DUTIP 10.99.0.168
-set username spirent
-set password spirent
-set enablePassword spirent
+set username viavi
+set password viavi
+set enablePassword viavi
 
 set ipv4AddrList {11.1.0.2 11.2.0.2}
 set ipv4GatewayList {11.1.0.1 11.2.0.1}

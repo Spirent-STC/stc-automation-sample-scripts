@@ -2,7 +2,7 @@
 #
 # File Name:         igmpopppoe.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup IGMP over PPPoE.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup IGMP over PPPoE.
 #
 # Test Steps:        1. Reserve and connect chassis ports
 #                    2. Configure interface on port2
@@ -113,7 +113,7 @@ igmp over pppoe test
 ##############################################################
     Log To Console  \nConnect PPPoE on port1
 
-    ${device_ret0} =  pppox config  mode=create   encap=ethernet_ii   protocol=pppoe   ac_select_mode=service_name   circuit_id_suffix_mode=none   port_handle=${port1}   max_outstanding=100   disconnect_rate=1000   attempt_rate=100   pppoe_circuit_id=circuit   mru_neg_enable=1   max_configure_req=10   chap_ack_timeout=10   max_padi_req=10   padi_include_tag=1   padr_req_timeout=3   max_terminate_req=10   term_req_timeout=3   username=spirent   use_partial_block_state=false   max_auto_retry_count=10   agent_type=2516   max_ipcp_req=10   intermediate_agent=false   echo_req_interval=10   password=spirent   local_magic=1   config_req_timeout=10   active=1   auto_retry=1   padi_req_timeout=3   agent_mac_addr=00:00:00:00:00:00   lcp_mru=1492   ip_cp=ipv4_cp   auto_fill_ipv6=1   max_echo_acks=10   auth_mode=chap   include_id=1   ipcp_req_timeout=10   max_padr_req=10   padr_include_tag=1   echo_req=false   fsm_max_naks=5   mac_addr=00:10:94:01:00:01   mac_addr_repeat=0   mac_addr_step=00:00:00:00:00:01   intf_ip_addr=192.85.1.3   gateway_ip_addr=192.85.1.1   intf_ip_addr_step=0.0.0.1   gateway_ip_step=0.0.0.0   num_sessions=1
+    ${device_ret0} =  pppox config  mode=create   encap=ethernet_ii   protocol=pppoe   ac_select_mode=service_name   circuit_id_suffix_mode=none   port_handle=${port1}   max_outstanding=100   disconnect_rate=1000   attempt_rate=100   pppoe_circuit_id=circuit   mru_neg_enable=1   max_configure_req=10   chap_ack_timeout=10   max_padi_req=10   padi_include_tag=1   padr_req_timeout=3   max_terminate_req=10   term_req_timeout=3   username=viavi   use_partial_block_state=false   max_auto_retry_count=10   agent_type=2516   max_ipcp_req=10   intermediate_agent=false   echo_req_interval=10   password=viavi   local_magic=1   config_req_timeout=10   active=1   auto_retry=1   padi_req_timeout=3   agent_mac_addr=00:00:00:00:00:00   lcp_mru=1492   ip_cp=ipv4_cp   auto_fill_ipv6=1   max_echo_acks=10   auth_mode=chap   include_id=1   ipcp_req_timeout=10   max_padr_req=10   padr_include_tag=1   echo_req=false   fsm_max_naks=5   mac_addr=00:10:94:01:00:01   mac_addr_repeat=0   mac_addr_step=00:00:00:00:00:01   intf_ip_addr=192.85.1.3   gateway_ip_addr=192.85.1.1   intf_ip_addr_step=0.0.0.1   gateway_ip_step=0.0.0.0   num_sessions=1
 
     ${status} =  Get From Dictionary  ${device_ret0}  status
     Run Keyword If  ${status} == 0  Log To Console  \nrun pppox config failed\n${device_ret0}

@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_PPPoE_DHCPV6PD_SERVER_CLIENT_B2B.tcl
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup STP devices
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup STP devices
 #
 # Test Step:         1. Reserve and connect chassis ports
 #                    2. Interface config
@@ -156,8 +156,8 @@ set returnedString [sth::pppox_config   -mode "create" \
                         -ip_cp                      ipv6_cp \
                         -num_sessions               1 \
                         -auth_mode                  chap \
-                        -username                   spirent \
-                        -password                   spirent \
+                        -username                   viavi \
+                        -password                   viavi \
                         -mac_addr                   "00:10:94:01:00:45" \
                         -mac_addr_step              "00.00.00.00.00.01" ]
 

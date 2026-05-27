@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           rfc3918_all.robot                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup RFC3918 in B2B mode.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup RFC3918 in B2B mode.
 #                      
 # Test Steps:          
 #                    1. Reserve and connect chassis ports

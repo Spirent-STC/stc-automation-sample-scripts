@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_OSPFv2_topylogy_enhance.py
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup OSPFv2 with enhancement for 
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup OSPFv2 with enhancement for 
 #                    emulation_ospf_topology_route_config.                  
 #                    1)For these LSAs (type ext_routes, nssa_routes, summary_routes, router), a default router LSA for the #                      emulated router1(created by emulation_ospf_config) will be created automatically.
 #                    2)If a grid of simulated routers are created firstly on router2, and AS-external/NSSA/summary LSA will be #                      created on the same router2, then you can "connect" the latter LSA with one of the simulated router, by #                      using ?external_connect? to select the advertising router.

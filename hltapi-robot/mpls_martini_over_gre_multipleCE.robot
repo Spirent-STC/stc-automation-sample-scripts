@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           mpls_martini_over_gre_multipleCE.robot                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup MPLS L2VPN over GRE in martini method.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup MPLS L2VPN over GRE in martini method.
 #                      
 # Test Steps:          
 #             1.Reserve and connect chassis ports

@@ -122,7 +122,7 @@ dhcp with traffic test
 
 #start to create DHCP server on port2: 
 
-    ${device_ret0} =  emulation dhcp server config  mode=create   ip_version=4   encapsulation=ETHERNET_II   remote_id=remoteId_@p-@b-@s   ipaddress_count=245   ipaddress_pool=10.1.1.10   vpn_id_count=1   vpn_id_type=nvt_ascii   circuit_id_count=1   remote_id_count=1   circuit_id=circuitId_@p   vpn_id=spirent_@p   ipaddress_increment=1   port_handle=${port2}   lease_time=3600   tos_value=192   offer_reserve_time=10   min_allowed_lease_time=600   assign_strategy=GATEWAY   host_name=server_@p-@b-@s   renewal_time_percent=50   enable_overlap_addr=false   decline_reserve_time=10   rebinding_time_percent=87.5   ip_repeat=0   remote_mac=00:00:01:00:00:01   ip_address=10.1.1.2   ip_prefix_length=24   ip_gateway=10.1.1.1   ip_step=0.0.0.1   local_mac=00:10:94:00:00:02   count=1
+    ${device_ret0} =  emulation dhcp server config  mode=create   ip_version=4   encapsulation=ETHERNET_II   remote_id=remoteId_@p-@b-@s   ipaddress_count=245   ipaddress_pool=10.1.1.10   vpn_id_count=1   vpn_id_type=nvt_ascii   circuit_id_count=1   remote_id_count=1   circuit_id=circuitId_@p   vpn_id=viavi_@p   ipaddress_increment=1   port_handle=${port2}   lease_time=3600   tos_value=192   offer_reserve_time=10   min_allowed_lease_time=600   assign_strategy=GATEWAY   host_name=server_@p-@b-@s   renewal_time_percent=50   enable_overlap_addr=false   decline_reserve_time=10   rebinding_time_percent=87.5   ip_repeat=0   remote_mac=00:00:01:00:00:01   ip_address=10.1.1.2   ip_prefix_length=24   ip_gateway=10.1.1.1   ip_step=0.0.0.1   local_mac=00:10:94:00:00:02   count=1
 
 
     ${status} =  Get From Dictionary  ${device_ret0}  status

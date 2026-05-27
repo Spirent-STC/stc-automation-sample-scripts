@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           sip_p2p.robot                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup SIP in Peer-to-Peer scenario.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup SIP in Peer-to-Peer scenario.
 #                      
 # Test Steps:          
 #                    1. Reserve and connect chassis ports

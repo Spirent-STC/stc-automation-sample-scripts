@@ -2,7 +2,7 @@
 #
 # File Name:         pim_highscale.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI PIM with 20K Multicast groups.
+# Description:       This script demonstrates the use of VIAVI HLTAPI PIM with 20K Multicast groups.
 # 
 # Test Step:
 #                    1. Reserve and connect chassis ports                             

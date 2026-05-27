@@ -2,7 +2,7 @@
 #
 # File Name:         isis_sr.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup ISIS with Segment Routing.                  
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup ISIS with Segment Routing.                  
 #
 # Test Step:
 #                    1. Reserve and connect chassis ports                             

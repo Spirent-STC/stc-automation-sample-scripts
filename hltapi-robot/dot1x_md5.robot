@@ -2,7 +2,7 @@
 #
 # File Name:         dot1x_md5.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup 802.1x devices by MD5 authentication.                  
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup 802.1x devices by MD5 authentication.                  
 #                                      
 #
 # Test Steps:        1. Reserve and connect chassis ports
@@ -111,7 +111,7 @@ dot1x md5 test
 # Step3: Configure 10 supplicants of 802.1x
 ###########################################
 
-    ${device_ret0} =  emulation dot1x config  mode=create   ip_version=ipv4   username=spirent   password=spirent   encapsulation=ethernet_ii   port_handle=${port1}   supplicant_logoff_rate=300   max_authentications=600   supplicant_auth_rate=100   auth_retry_count=10   use_pae_group_mac=1   retransmit_interval=1000   authenticator_mac=00:10:94:00:00:02   eap_auth_method=md5   retransmit_count=300   auth_retry_interval=1000   mac_addr=00:10:94:00:00:04   mac_addr_step=00:00:00:00:00:01   local_ip_prefix_len=24   gateway_ip_addr=192.85.1.1   local_ip_addr_step=0.0.0.1   gateway_ip_addr_step=0.0.0.0   local_ip_addr=192.85.1.3   num_sessions=10   name=Dot1x_1
+    ${device_ret0} =  emulation dot1x config  mode=create   ip_version=ipv4   username=viavi   password=viavi   encapsulation=ethernet_ii   port_handle=${port1}   supplicant_logoff_rate=300   max_authentications=600   supplicant_auth_rate=100   auth_retry_count=10   use_pae_group_mac=1   retransmit_interval=1000   authenticator_mac=00:10:94:00:00:02   eap_auth_method=md5   retransmit_count=300   auth_retry_interval=1000   mac_addr=00:10:94:00:00:04   mac_addr_step=00:00:00:00:00:01   local_ip_prefix_len=24   gateway_ip_addr=192.85.1.1   local_ip_addr_step=0.0.0.1   gateway_ip_addr_step=0.0.0.0   local_ip_addr=192.85.1.3   num_sessions=10   name=Dot1x_1
 
     ${status} =  Get From Dictionary  ${device_ret0}  status
     Run Keyword If  ${status} == 0  Log To Console  \nrun emulation dot1x config failed\n${device_ret0}

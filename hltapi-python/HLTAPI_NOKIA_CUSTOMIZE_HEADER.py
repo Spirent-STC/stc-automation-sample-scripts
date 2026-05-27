@@ -2,7 +2,7 @@
 #
 # File Name:         HLTAPI_NOKIA_CUSTOMIZE_HEADER.py
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup NOKIA customize header for raw stream block.
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup NOKIA customize header for raw stream block.
 #                    some examples for these 4 APIs: addHeader, deleteHeader, insertHeader and replaceHeader.
 #
 # Test Step:         

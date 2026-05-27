@@ -29,7 +29,7 @@
 #
 # Revison History : -Even(WuHang) 2009/08/05, PV China Team
 #
-# Copyright (C) 2009 by Spirent Communciations, Inc.
+# Copyright (C) 2009-2026 by VIAVI Solutions, Inc.
 # All Rights Reserved
 #
 #
@@ -147,9 +147,9 @@ set capture 0
 set ratio 0.60
 set timeout 10
 set DUTIP 10.99.0.191
-set dutUserName "spirent"
-set dutPassWord "spirent"
-set enablePassword "spirent"
+set dutUserName "viavi"
+set dutPassWord "viavi"
+set enablePassword "viavi"
 
 #------------------------------------------------step1. Connect and Config ports---------------------------------------------------
 puts "\n-------------------------------------------step1. Connect and Config ports-------------------------------------"

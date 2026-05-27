@@ -2,7 +2,7 @@
 #
 # File Name:         ospfv2_topylogy_enhance.robot
 #
-# Description:       This script demonstrates the use of Spirent HLTAPI to setup OSPFv2 with enhancement for 
+# Description:       This script demonstrates the use of VIAVI HLTAPI to setup OSPFv2 with enhancement for 
 #                    emulation_ospf_topology_route_config.                  
 #                    1)For these LSAs (type ext_routes, nssa_routes, summary_routes, router), a default router LSA for the 
 #                      emulated router1(created by emulation_ospf_config) will be created automatically.

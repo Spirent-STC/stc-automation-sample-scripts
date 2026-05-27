@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           HLTAPI_MPLS_L3VPN_Over_GRE_Multiple_CE.py                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup MPLS L3VPN over GRE in BGP/OSPF scenario.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup MPLS L3VPN over GRE in BGP/OSPF scenario.
 #                      
 # Test Steps:          
 #             1.Reserve and connect chassis ports

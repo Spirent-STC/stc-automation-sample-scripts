@@ -1,7 +1,7 @@
 #########################################################################################################################
 #
 # File Name:           HLTAPI_LACP.py                 
-# Description:         This script demonstrates the use of Spirent HLTAPI to setup LACP in B2B connection.
+# Description:         This script demonstrates the use of VIAVI HLTAPI to setup LACP in B2B connection.
 #                      
 # Test Steps:          
 #                    1. Reserve and connect chassis ports
